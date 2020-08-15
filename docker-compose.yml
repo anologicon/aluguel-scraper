@@ -1,0 +1,7 @@
+version: '3.7'
+services:
+  web:
+    container_name: scrapping
+    build: .
+    ports:
+      - "8888:8888"
