@@ -12,6 +12,8 @@ Quartos = []
 Banheiros = []
 Vagas = []
 Uri = []
+Cidade = []
+Endereco = []
 
 def findTextNull(elementFind):
     elementText = elementFind.text
@@ -21,61 +23,69 @@ def findTextNull(elementFind):
     
     return elementText
 
-for page in range(1,5):
+for cidade in ('florianopolis', 'brusque', 'blumenau'):
 
-    url = 'https://www.vivareal.com.br/aluguel/santa-catarina/florianopolis/?__vt=gv:b&pagina='+str(page)+'#onde=BR-Santa_Catarina-NULL-Florianopolis'
+    for page in range(1,15):
 
-    page = http.urlopen('GET',url)
+        url = 'https://www.vivareal.com.br/aluguel/santa-catarina/'+cidade+'/?__vt=gv:b&pagina='+str(page)
 
-    soup = BeautifulSoup(page.data.decode('utf-8'),"html.parser")
+        page = http.urlopen('GET',url)
 
-    alugueis = soup.find_all('article', {'class': 'property-card__container js-property-card'})
+        soup = BeautifulSoup(page.data.decode('utf-8'),"html.parser")
 
-    for row in alugueis:
+        alugueis = soup.find_all('article', {'class': 'property-card__container js-property-card'})
 
-        valor = row.find("div", "property-card__price js-property-card-prices js-property-card__price-small")
+        for row in alugueis:
 
-        TipoAluguel.append(valor.find('span').text.replace('/',''))
+            Cidade.append(cidade)
 
-        valor.find('span').decompose()
+            enderecoFind = row.find('span', 'property-card__address')
 
-        Valor.append(valor.text
-            .replace('.','')
-            .replace(' ','')
-            .replace('R$','')
-            )
+            Endereco.append(enderecoFind.text)
 
-        condominioFind = row.find('strong', 'js-condo-price')
+            valor = row.find("div", "property-card__price js-property-card-prices js-property-card__price-small")
 
-        if(condominioFind):
-            Condominio.append(condominioFind.text
-                .replace('R$','')
+            TipoAluguel.append(valor.find('span').text.replace('/',''))
+
+            valor.find('span').decompose()
+
+            Valor.append(valor.text
                 .replace('.','')
+                .replace(' ','')
+                .replace('R$','')
                 )
-        else :
-            Condominio.append(0)
 
-        areaFind = row.find('span', 'property-card__detail-value js-property-card-value property-card__detail-area js-property-card-detail-area')
+            condominioFind = row.find('strong', 'js-condo-price')
 
-        Area.append(areaFind.text)
+            if(condominioFind):
+                Condominio.append(condominioFind.text
+                    .replace('R$','')
+                    .replace('.','')
+                    )
+            else :
+                Condominio.append(0)
 
-        quartosFind = row.find('span', 'property-card__detail-value js-property-card-value')
+            areaFind = row.find('span', 'property-card__detail-value js-property-card-value property-card__detail-area js-property-card-detail-area')
 
-        quartosText = findTextNull(quartosFind)
+            Area.append(areaFind.text)
 
-        Quartos.append(quartosText)
+            quartosFind = row.find('span', 'property-card__detail-value js-property-card-value')
 
-        banheirosFind = row.find('span', 'property-card__detail-value js-property-card-value')
+            quartosText = findTextNull(quartosFind)
 
-        Banheiros.append(findTextNull(banheirosFind))
+            Quartos.append(quartosText)
 
-        vagasFind = row.find('span', 'property-card__detail-value js-property-card-value')
-        
-        Vagas.append(findTextNull(vagasFind))
+            banheirosFind = row.find('span', 'property-card__detail-value js-property-card-value')
 
-        uriFind = row.find('a', 'property-card__title js-cardLink js-card-title',  href=True)
+            Banheiros.append(findTextNull(banheirosFind))
 
-        Uri.append("https://www.vivareal.com.br/"+uriFind['href'])
+            vagasFind = row.find('span', 'property-card__detail-value js-property-card-value')
+            
+            Vagas.append(findTextNull(vagasFind))
+
+            uriFind = row.find('a', 'property-card__title js-cardLink js-card-title',  href=True)
+
+            Uri.append("https://www.vivareal.com.br/"+uriFind['href'])
 
 df=pd.DataFrame(Valor,columns=['Valor'])
 
@@ -87,5 +97,7 @@ df['Quartos'] = Quartos
 df['Banheiros'] = Banheiros
 df['Vagas'] = Vagas
 df['Uri'] = Uri
+df['Cidade'] = Cidade
+df['Endereco'] = Endereco
 
 df.to_csv('./result.csv', index=False)
