@@ -1,145 +1,145 @@
-Valor,TipoAluguel,Condominio
-1.900,Mês,   360  
-1.300,Mês,   422  
-4.000,Mês,0
-1.200,Mês,0
-2.300,Mês,   800  
-5.200,Mês,0
-3.200,Mês,   450  
-1.250,Mês,0
-1.950,Mês,   500  
-1.300,Mês,   350  
-3.000,Mês,0
-2.700,Mês,0
-2.550,Mês,   775  
-2.700,Mês,   1.046  
-1.800,Mês,0
-1.600,Mês,   150  
-2.599,Dia,0
-87.000,Mês,0
-2.100,Mês,   463  
-900,Mês,0
-2.000,Mês,   450  
-1.500,Mês,   300  
-7.000,Mês,0
-3.500,Mês,   600  
-6.000,Mês,0
-1.450,Mês,   400  
-2.000,Mês,   250  
-3.200,Mês,   800  
-3.000,Dia,0
-800,Dia,   500  
-2.100,Mês,   400  
-5.600,Mês,   800  
-1.900,Mês,   220  
-2.800,Mês,   480  
-1.900,Mês,0
-2.440,Mês,   725  
-1.900,Mês,   360  
-1.300,Mês,   422  
-4.000,Mês,0
-1.200,Mês,0
-2.300,Mês,   800  
-5.200,Mês,0
-3.200,Mês,   450  
-1.250,Mês,0
-1.950,Mês,   500  
-1.300,Mês,   350  
-3.000,Mês,0
-2.700,Mês,0
-2.550,Mês,   775  
-2.700,Mês,   1.046  
-1.800,Mês,0
-1.600,Mês,   150  
-2.599,Dia,0
-87.000,Mês,0
-2.100,Mês,   463  
-900,Mês,0
-2.000,Mês,   450  
-1.500,Mês,   300  
-7.000,Mês,0
-3.500,Mês,   600  
-6.000,Mês,0
-1.450,Mês,   400  
-2.000,Mês,   250  
-3.200,Mês,   800  
-3.000,Dia,0
-800,Dia,   500  
-2.100,Mês,   400  
-5.600,Mês,   800  
-1.900,Mês,   220  
-2.800,Mês,   480  
-1.900,Mês,0
-2.440,Mês,   725  
-1.900,Mês,   360  
-1.300,Mês,   422  
-4.000,Mês,0
-1.200,Mês,0
-2.300,Mês,   800  
-5.200,Mês,0
-3.200,Mês,   450  
-1.250,Mês,0
-1.950,Mês,   500  
-1.300,Mês,   350  
-3.000,Mês,0
-2.700,Mês,0
-2.550,Mês,   775  
-2.700,Mês,   1.046  
-1.800,Mês,0
-1.600,Mês,   150  
-2.599,Dia,0
-87.000,Mês,0
-2.100,Mês,   463  
-900,Mês,0
-2.000,Mês,   450  
-1.500,Mês,   300  
-7.000,Mês,0
-3.500,Mês,   600  
-6.000,Mês,0
-1.450,Mês,   400  
-2.000,Mês,   250  
-3.200,Mês,   800  
-3.000,Dia,0
-800,Dia,   500  
-2.100,Mês,   400  
-5.600,Mês,   800  
-1.900,Mês,   220  
-2.800,Mês,   480  
-1.900,Mês,0
-2.440,Mês,   725  
-1.900,Mês,   360  
-1.300,Mês,   422  
-4.000,Mês,0
-1.200,Mês,0
-2.300,Mês,   800  
-5.200,Mês,0
-3.200,Mês,   450  
-1.250,Mês,0
-1.950,Mês,   500  
-1.300,Mês,   350  
-3.000,Mês,0
-2.700,Mês,0
-2.550,Mês,   775  
-2.700,Mês,   1.046  
-1.800,Mês,0
-1.600,Mês,   150  
-2.599,Dia,0
-87.000,Mês,0
-2.100,Mês,   463  
-900,Mês,0
-2.000,Mês,   450  
-1.500,Mês,   300  
-7.000,Mês,0
-3.500,Mês,   600  
-6.000,Mês,0
-1.450,Mês,   400  
-2.000,Mês,   250  
-3.200,Mês,   800  
-3.000,Dia,0
-800,Dia,   500  
-2.100,Mês,   400  
-5.600,Mês,   800  
-1.900,Mês,   220  
-2.800,Mês,   480  
-1.900,Mês,0
-2.440,Mês,   725  
+Valor,TipoAluguel,Condominio,Area,Quartos,Banheiros,Vagas,Uri
+3200,Mês,   450  , 47 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-47m2-aluguel-RS3200-id-2490665675/
+1300,Mês,   422  , 46 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-coqueiros-bairros-florianopolis-com-garagem-46m2-aluguel-RS1300-id-2492117178/
+4000,Mês,0, 56 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-56m2-venda-RS749000-id-2492285999/
+2300,Mês,   800  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-pantanal-bairros-florianopolis-com-garagem-70m2-aluguel-RS2300-id-2488674278/
+7000,Mês,0, 77 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-centro-bairros-florianopolis-com-garagem-77m2-venda-RS1541000-id-2492288401/
+1900,Mês,   220  , 66 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-66m2-aluguel-RS1900-id-2491392198/
+3500,Mês,   750  , 80 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-80m2-aluguel-RS3500-id-2489660720/
+2550,Mês,   775  , 94 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-94m2-aluguel-RS2550-id-2487386346/
+2100,Mês,   400  , 75 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-trindade-bairros-florianopolis-com-garagem-75m2-aluguel-RS2100-id-2485646087/
+1800,Mês,0, 43 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-centro-bairros-florianopolis-com-garagem-43m2-aluguel-RS1800-id-2487789777/
+1900,Mês,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-80m2-aluguel-RS1900-id-2486307476/
+87000,Mês,0, 1500 ,0,0,0,https://www.vivareal.com.br//imovel/imovel-comercial-barra-da-lagoa-bairros-florianopolis-1500m2-aluguel-RS87000-id-2492305665/
+5200,Mês,0, 67 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-florianopolis-com-garagem-67m2-venda-RS1338000-id-2492300351/
+1900,Mês,   560  , 62 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-62m2-aluguel-RS1900-id-2484472302/
+3500,Mês,   700  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-agronomica-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483773785/
+2440,Mês,   725  , 101 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-101m2-aluguel-RS2440-id-2491698773/
+2599,Dia,0, 300 , 5 , 5 , 5 ,https://www.vivareal.com.br//imovel/casa-5-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS2599-id-2479056290/
+1400,Dia,0, 300 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS1400-id-2491966804/
+300000,Mês,0, 35 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-trindade-bairros-florianopolis-35m2-aluguel-RS300000-id-2485702308/
+2700,Mês,0, 67 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-67m2-aluguel-RS2700-id-2485719187/
+1695,Mês,   560  , 85 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-trindade-bairros-florianopolis-com-garagem-85m2-aluguel-RS1695-id-2487454745/
+14000,Mês,0, 320 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-saco-grande-bairros-florianopolis-320m2-aluguel-RS14000-id-2492404722/
+6400,Mês,0, 235 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-estreito-bairros-florianopolis-com-garagem-235m2-aluguel-RS6400-id-2487188847/
+800,Dia,   500  , 100 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/cobertura-3-quartos-ingleses-norte-bairros-florianopolis-com-garagem-100m2-venda-RS900000-id-2491618894/
+3500,Mês,   600  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483672175/
+1250,Mês,0, 32 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-centro-bairros-florianopolis-com-garagem-32m2-aluguel-RS1250-id-2481755755/
+2950,Mês,0, 278 ,0,0,0,https://www.vivareal.com.br//imovel/galpao-deposito-armazem-jardim-atlantico-bairros-florianopolis-278m2-aluguel-RS2950-id-2490137332/
+2100,Mês,   600  , 69 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-69m2-aluguel-RS2100-id-2489918781/
+1750,Mês,   777  , 84 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-abraao-bairros-florianopolis-com-garagem-84m2-aluguel-RS1750-id-2491765546/
+570,Dia,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-canasvieiras-bairros-florianopolis-com-garagem-80m2-aluguel-RS570-id-2492749372/
+8000,Mês,0, 347 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-347m2-venda-RS2900000-id-2490771482/
+1890,Mês,   580  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-ingleses-norte-bairros-florianopolis-com-garagem-70m2-aluguel-RS1890-id-2492062475/
+10000,Mês,0, 141 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-itacorubi-bairros-florianopolis-com-garagem-141m2-aluguel-RS10000-id-2475451278/
+15000,Mês,0, 300 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-campeche-bairros-florianopolis-com-garagem-300m2-aluguel-RS15000-id-2492386690/
+2000,Mês,0, 59 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-59m2-aluguel-RS2000-id-2490964592/
+10000,Mês,0, 685 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-centro-bairros-florianopolis-685m2-aluguel-RS10000-id-2485916011/
+3200,Mês,   450  , 47 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-47m2-aluguel-RS3200-id-2490665675/
+1300,Mês,   422  , 46 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-coqueiros-bairros-florianopolis-com-garagem-46m2-aluguel-RS1300-id-2492117178/
+4000,Mês,0, 56 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-56m2-venda-RS749000-id-2492285999/
+2300,Mês,   800  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-pantanal-bairros-florianopolis-com-garagem-70m2-aluguel-RS2300-id-2488674278/
+7000,Mês,0, 77 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-centro-bairros-florianopolis-com-garagem-77m2-venda-RS1541000-id-2492288401/
+1900,Mês,   220  , 66 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-66m2-aluguel-RS1900-id-2491392198/
+3500,Mês,   750  , 80 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-80m2-aluguel-RS3500-id-2489660720/
+2550,Mês,   775  , 94 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-94m2-aluguel-RS2550-id-2487386346/
+2100,Mês,   400  , 75 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-trindade-bairros-florianopolis-com-garagem-75m2-aluguel-RS2100-id-2485646087/
+1800,Mês,0, 43 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-centro-bairros-florianopolis-com-garagem-43m2-aluguel-RS1800-id-2487789777/
+1900,Mês,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-80m2-aluguel-RS1900-id-2486307476/
+87000,Mês,0, 1500 ,0,0,0,https://www.vivareal.com.br//imovel/imovel-comercial-barra-da-lagoa-bairros-florianopolis-1500m2-aluguel-RS87000-id-2492305665/
+5200,Mês,0, 67 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-florianopolis-com-garagem-67m2-venda-RS1338000-id-2492300351/
+1900,Mês,   560  , 62 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-62m2-aluguel-RS1900-id-2484472302/
+3500,Mês,   700  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-agronomica-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483773785/
+2440,Mês,   725  , 101 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-101m2-aluguel-RS2440-id-2491698773/
+2599,Dia,0, 300 , 5 , 5 , 5 ,https://www.vivareal.com.br//imovel/casa-5-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS2599-id-2479056290/
+1400,Dia,0, 300 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS1400-id-2491966804/
+300000,Mês,0, 35 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-trindade-bairros-florianopolis-35m2-aluguel-RS300000-id-2485702308/
+2700,Mês,0, 67 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-67m2-aluguel-RS2700-id-2485719187/
+1695,Mês,   560  , 85 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-trindade-bairros-florianopolis-com-garagem-85m2-aluguel-RS1695-id-2487454745/
+14000,Mês,0, 320 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-saco-grande-bairros-florianopolis-320m2-aluguel-RS14000-id-2492404722/
+6400,Mês,0, 235 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-estreito-bairros-florianopolis-com-garagem-235m2-aluguel-RS6400-id-2487188847/
+800,Dia,   500  , 100 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/cobertura-3-quartos-ingleses-norte-bairros-florianopolis-com-garagem-100m2-venda-RS900000-id-2491618894/
+3500,Mês,   600  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483672175/
+1250,Mês,0, 32 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-centro-bairros-florianopolis-com-garagem-32m2-aluguel-RS1250-id-2481755755/
+2950,Mês,0, 278 ,0,0,0,https://www.vivareal.com.br//imovel/galpao-deposito-armazem-jardim-atlantico-bairros-florianopolis-278m2-aluguel-RS2950-id-2490137332/
+2100,Mês,   600  , 69 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-69m2-aluguel-RS2100-id-2489918781/
+1750,Mês,   777  , 84 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-abraao-bairros-florianopolis-com-garagem-84m2-aluguel-RS1750-id-2491765546/
+570,Dia,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-canasvieiras-bairros-florianopolis-com-garagem-80m2-aluguel-RS570-id-2492749372/
+8000,Mês,0, 347 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-347m2-venda-RS2900000-id-2490771482/
+1890,Mês,   580  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-ingleses-norte-bairros-florianopolis-com-garagem-70m2-aluguel-RS1890-id-2492062475/
+10000,Mês,0, 141 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-itacorubi-bairros-florianopolis-com-garagem-141m2-aluguel-RS10000-id-2475451278/
+15000,Mês,0, 300 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-campeche-bairros-florianopolis-com-garagem-300m2-aluguel-RS15000-id-2492386690/
+2000,Mês,0, 59 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-59m2-aluguel-RS2000-id-2490964592/
+10000,Mês,0, 685 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-centro-bairros-florianopolis-685m2-aluguel-RS10000-id-2485916011/
+3200,Mês,   450  , 47 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-47m2-aluguel-RS3200-id-2490665675/
+1300,Mês,   422  , 46 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-coqueiros-bairros-florianopolis-com-garagem-46m2-aluguel-RS1300-id-2492117178/
+2300,Mês,   800  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-pantanal-bairros-florianopolis-com-garagem-70m2-aluguel-RS2300-id-2488674278/
+7000,Mês,0, 77 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-centro-bairros-florianopolis-com-garagem-77m2-venda-RS1541000-id-2492288401/
+1700,Mês,   500  , 68 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-cachoeira-do-bom-jesus-bairros-florianopolis-com-garagem-68m2-aluguel-RS1700-id-2492128781/
+1500,Mês,   300  , 35 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-pantanal-bairros-florianopolis-35m2-aluguel-RS1500-id-2486586277/
+1900,Mês,   220  , 66 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-66m2-aluguel-RS1900-id-2491392198/
+4000,Mês,0, 56 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-56m2-venda-RS749000-id-2492285999/
+3500,Mês,   750  , 80 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-80m2-aluguel-RS3500-id-2489660720/
+2550,Mês,   775  , 94 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-94m2-aluguel-RS2550-id-2487386346/
+2100,Mês,   400  , 75 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-trindade-bairros-florianopolis-com-garagem-75m2-aluguel-RS2100-id-2485646087/
+1800,Mês,0, 43 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-centro-bairros-florianopolis-com-garagem-43m2-aluguel-RS1800-id-2487789777/
+900,Mês,0, 30 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-vargem-do-bom-jesus-bairros-florianopolis-30m2-aluguel-RS900-id-2484503902/
+1900,Mês,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-80m2-aluguel-RS1900-id-2486307476/
+87000,Mês,0, 1500 ,0,0,0,https://www.vivareal.com.br//imovel/imovel-comercial-barra-da-lagoa-bairros-florianopolis-1500m2-aluguel-RS87000-id-2492305665/
+2700,Mês,   1046  , 184 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/cobertura-3-quartos-ingleses-norte-bairros-florianopolis-com-garagem-184m2-aluguel-RS2700-id-2490591788/
+5200,Mês,0, 67 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-florianopolis-com-garagem-67m2-venda-RS1338000-id-2492300351/
+1900,Mês,   560  , 62 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-62m2-aluguel-RS1900-id-2484472302/
+2440,Mês,   725  , 101 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-101m2-aluguel-RS2440-id-2491698773/
+2599,Dia,0, 300 , 5 , 5 , 5 ,https://www.vivareal.com.br//imovel/casa-5-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS2599-id-2479056290/
+1400,Dia,0, 300 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS1400-id-2491966804/
+300000,Mês,0, 35 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-trindade-bairros-florianopolis-35m2-aluguel-RS300000-id-2485702308/
+2700,Mês,0, 67 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-67m2-aluguel-RS2700-id-2485719187/
+1695,Mês,   560  , 85 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-trindade-bairros-florianopolis-com-garagem-85m2-aluguel-RS1695-id-2487454745/
+14000,Mês,0, 320 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-saco-grande-bairros-florianopolis-320m2-aluguel-RS14000-id-2492404722/
+6400,Mês,0, 235 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-estreito-bairros-florianopolis-com-garagem-235m2-aluguel-RS6400-id-2487188847/
+800,Dia,   500  , 100 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/cobertura-3-quartos-ingleses-norte-bairros-florianopolis-com-garagem-100m2-venda-RS900000-id-2491618894/
+3500,Mês,   600  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483672175/
+3500,Mês,   700  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-agronomica-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483773785/
+1250,Mês,0, 32 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-centro-bairros-florianopolis-com-garagem-32m2-aluguel-RS1250-id-2481755755/
+2950,Mês,0, 278 ,0,0,0,https://www.vivareal.com.br//imovel/galpao-deposito-armazem-jardim-atlantico-bairros-florianopolis-278m2-aluguel-RS2950-id-2490137332/
+2100,Mês,   600  , 69 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-69m2-aluguel-RS2100-id-2489918781/
+1750,Mês,   777  , 84 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-abraao-bairros-florianopolis-com-garagem-84m2-aluguel-RS1750-id-2491765546/
+570,Dia,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-canasvieiras-bairros-florianopolis-com-garagem-80m2-aluguel-RS570-id-2492749372/
+8000,Mês,0, 347 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-347m2-venda-RS2900000-id-2490771482/
+1890,Mês,   580  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-ingleses-norte-bairros-florianopolis-com-garagem-70m2-aluguel-RS1890-id-2492062475/
+3200,Mês,   450  , 47 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-47m2-aluguel-RS3200-id-2490665675/
+1300,Mês,   422  , 46 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-coqueiros-bairros-florianopolis-com-garagem-46m2-aluguel-RS1300-id-2492117178/
+4000,Mês,0, 56 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-centro-bairros-florianopolis-com-garagem-56m2-venda-RS749000-id-2492285999/
+2300,Mês,   800  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-pantanal-bairros-florianopolis-com-garagem-70m2-aluguel-RS2300-id-2488674278/
+7000,Mês,0, 77 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-centro-bairros-florianopolis-com-garagem-77m2-venda-RS1541000-id-2492288401/
+1500,Mês,   300  , 35 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-pantanal-bairros-florianopolis-35m2-aluguel-RS1500-id-2486586277/
+1900,Mês,   220  , 66 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-66m2-aluguel-RS1900-id-2491392198/
+3500,Mês,   750  , 80 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-80m2-aluguel-RS3500-id-2489660720/
+2550,Mês,   775  , 94 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-jurere-bairros-florianopolis-com-garagem-94m2-aluguel-RS2550-id-2487386346/
+2100,Mês,   400  , 75 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-trindade-bairros-florianopolis-com-garagem-75m2-aluguel-RS2100-id-2485646087/
+1900,Mês,   500  , 68 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-cachoeira-do-bom-jesus-bairros-florianopolis-com-garagem-68m2-aluguel-RS1900-id-2492128876/
+1800,Mês,0, 43 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-centro-bairros-florianopolis-com-garagem-43m2-aluguel-RS1800-id-2487789777/
+900,Mês,0, 30 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-vargem-do-bom-jesus-bairros-florianopolis-30m2-aluguel-RS900-id-2484503902/
+1900,Mês,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-80m2-aluguel-RS1900-id-2486307476/
+87000,Mês,0, 1500 ,0,0,0,https://www.vivareal.com.br//imovel/imovel-comercial-barra-da-lagoa-bairros-florianopolis-1500m2-aluguel-RS87000-id-2492305665/
+2700,Mês,   1046  , 184 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/cobertura-3-quartos-ingleses-norte-bairros-florianopolis-com-garagem-184m2-aluguel-RS2700-id-2490591788/
+5200,Mês,0, 67 , 1 , 1 , 1 ,https://www.vivareal.com.br//imovel/apartamento-1-quartos-florianopolis-com-garagem-67m2-venda-RS1338000-id-2492300351/
+1900,Mês,   560  , 62 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-62m2-aluguel-RS1900-id-2484472302/
+3500,Mês,   700  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-agronomica-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483773785/
+2440,Mês,   725  , 101 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-centro-bairros-florianopolis-com-garagem-101m2-aluguel-RS2440-id-2491698773/
+2599,Dia,0, 300 , 5 , 5 , 5 ,https://www.vivareal.com.br//imovel/casa-5-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS2599-id-2479056290/
+1400,Dia,0, 300 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-jurere-internacional-bairros-florianopolis-com-garagem-300m2-aluguel-RS1400-id-2491966804/
+300000,Mês,0, 35 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-trindade-bairros-florianopolis-35m2-aluguel-RS300000-id-2485702308/
+2700,Mês,0, 67 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-67m2-aluguel-RS2700-id-2485719187/
+1695,Mês,   560  , 85 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/apartamento-3-quartos-trindade-bairros-florianopolis-com-garagem-85m2-aluguel-RS1695-id-2487454745/
+14000,Mês,0, 320 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-saco-grande-bairros-florianopolis-320m2-aluguel-RS14000-id-2492404722/
+6400,Mês,0, 235 ,0,0,0,https://www.vivareal.com.br//imovel/ponto-comercial-estreito-bairros-florianopolis-com-garagem-235m2-aluguel-RS6400-id-2487188847/
+800,Dia,   500  , 100 , 3 , 3 , 3 ,https://www.vivareal.com.br//imovel/cobertura-3-quartos-ingleses-norte-bairros-florianopolis-com-garagem-100m2-venda-RS900000-id-2491618894/
+3500,Mês,   600  , 73 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-campeche-bairros-florianopolis-com-garagem-73m2-aluguel-RS3500-id-2483672175/
+1250,Mês,0, 32 ,0,0,0,https://www.vivareal.com.br//imovel/sala-comercial-centro-bairros-florianopolis-com-garagem-32m2-aluguel-RS1250-id-2481755755/
+2950,Mês,0, 278 ,0,0,0,https://www.vivareal.com.br//imovel/galpao-deposito-armazem-jardim-atlantico-bairros-florianopolis-278m2-aluguel-RS2950-id-2490137332/
+2100,Mês,   600  , 69 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-itacorubi-bairros-florianopolis-com-garagem-69m2-aluguel-RS2100-id-2489918781/
+1750,Mês,   777  , 84 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-abraao-bairros-florianopolis-com-garagem-84m2-aluguel-RS1750-id-2491765546/
+570,Dia,0, 80 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-canasvieiras-bairros-florianopolis-com-garagem-80m2-aluguel-RS570-id-2492749372/
+8000,Mês,0, 347 , 4 , 4 , 4 ,https://www.vivareal.com.br//imovel/casa-4-quartos-lagoa-da-conceicao-bairros-florianopolis-com-garagem-347m2-venda-RS2900000-id-2490771482/
+1890,Mês,   580  , 70 , 2 , 2 , 2 ,https://www.vivareal.com.br//imovel/apartamento-2-quartos-ingleses-norte-bairros-florianopolis-com-garagem-70m2-aluguel-RS1890-id-2492062475/
