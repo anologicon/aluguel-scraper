@@ -1,1 +1,3 @@
 sudo docker run -i -t -v ${PWD}:/mydata:rw ex_scraper
+
+docker build -t ex_scraper .

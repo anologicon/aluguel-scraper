@@ -2,6 +2,11 @@ import pandas as pd;
 import urllib3;
 from bs4 import BeautifulSoup
 
+# Google storage
+from google.cloud import storage
+
+# Scrapper 
+
 http  = urllib3.PoolManager()
 
 Valor = []
@@ -89,7 +94,6 @@ for cidade in ('florianopolis', 'brusque', 'blumenau'):
 
 df=pd.DataFrame(Valor,columns=['Valor'])
 
-
 df['TipoAluguel'] = TipoAluguel
 df['Condominio'] = Condominio
 df['Area'] = Area
@@ -100,4 +104,10 @@ df['Uri'] = Uri
 df['Cidade'] = Cidade
 df['Endereco'] = Endereco
 
-df.to_csv('./result.csv', index=False)
+# End scrapper
+df.to_csv('./aluguel.csv', index=False)
+
+client = storage.Client()
+bucket = client.bucket('viva-real-alguel')
+blob = bucket.blob('aluguel.csv')
+blob.upload_from_filename('aluguel.csv')
