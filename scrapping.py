@@ -28,9 +28,9 @@ def findTextNull(elementFind):
 
 for cidade in ('florianopolis', 'brusque', 'blumenau'):
 
-    for page in range(1,2):
+    for page in range(1,30):
 
-        url = 'https://www.vivareal.com.br/aluguel/santa-catarina/'+cidade+'/?__vt=gv:b&pagina='+str(page)
+        url = 'https://www.vivareal.com.br/aluguel/santa-catarina/'+cidade+'/?__vt=gv:b&pagina='+str(page)+'tipos=apartamento_residencial,casa_residencial,condominio_residencial,,sobrado_residencial,kitnet_residencial'
 
         page = http.urlopen('GET',url)
 
@@ -74,23 +74,33 @@ for cidade in ('florianopolis', 'brusque', 'blumenau'):
 
             quartosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-room js-property-detail-rooms')
             
-            quartosFind = quartosFindLi[0].find('span', 'property-card__detail-value js-property-card-value')
+            quartosText = ''
 
-            quartosText = findTextNull(quartosFind)
+            for quartosFind in quartosFindLi:
+                quartosSpan = quartosFind.find('span', 'property-card__detail-value js-property-card-value')
+                quartosText = findTextNull(quartosSpan)
 
             Quartos.append(quartosText)
 
-            banheirosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-item-extra js-property-detail-suites')
+            banheirosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-bathroom js-property-detail-bathroom')
             
-            banheirosFind = banheirosFindLi[0].find('span', 'property-card__detail-value js-property-card-value')
+            banheirosText = ''
 
-            Banheiros.append(findTextNull(banheirosFind))
+            for banheirosFind in banheirosFindLi:
+                banheirosSapan = banheirosFind.find('span', 'property-card__detail-value js-property-card-value')
+                banheirosText = findTextNull(banheirosSapan)
 
-            vagasFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-bathroom js-property-detail-bathroom')
+            Banheiros.append(banheirosText)
+
+            vagasFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-garage js-property-detail-garages')
             
-            vagasFind = vagasFindLi[0].find('span', 'property-card__detail-value js-property-card-value')
+            vagasText = ''
+
+            for vagasFind in vagasFindLi:
+                vagasSpan = vagasFind.find('span', 'property-card__detail-value js-property-card-value')
+                vagasText = findTextNull(vagasSpan)
             
-            Vagas.append(findTextNull(vagasFind))
+            Vagas.append(vagasText)
 
             uriFind = row.find('a', 'property-card__title js-cardLink js-card-title',  href=True)
 
