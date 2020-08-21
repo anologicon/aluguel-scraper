@@ -6,9 +6,7 @@ from bs4 import BeautifulSoup
 from google.cloud import storage
 
 # Scrapper 
-
 http  = urllib3.PoolManager()
-
 Valor = []
 TipoAluguel = []
 Condominio = []
@@ -30,7 +28,7 @@ def findTextNull(elementFind):
 
 for cidade in ('florianopolis', 'brusque', 'blumenau'):
 
-    for page in range(1,15):
+    for page in range(1,2):
 
         url = 'https://www.vivareal.com.br/aluguel/santa-catarina/'+cidade+'/?__vt=gv:b&pagina='+str(page)
 
@@ -74,17 +72,23 @@ for cidade in ('florianopolis', 'brusque', 'blumenau'):
 
             Area.append(areaFind.text)
 
-            quartosFind = row.find('span', 'property-card__detail-value js-property-card-value')
+            quartosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-room js-property-detail-rooms')
+            
+            quartosFind = quartosFindLi[0].find('span', 'property-card__detail-value js-property-card-value')
 
             quartosText = findTextNull(quartosFind)
 
             Quartos.append(quartosText)
 
-            banheirosFind = row.find('span', 'property-card__detail-value js-property-card-value')
+            banheirosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-item-extra js-property-detail-suites')
+            
+            banheirosFind = banheirosFindLi[0].find('span', 'property-card__detail-value js-property-card-value')
 
             Banheiros.append(findTextNull(banheirosFind))
 
-            vagasFind = row.find('span', 'property-card__detail-value js-property-card-value')
+            vagasFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-bathroom js-property-detail-bathroom')
+            
+            vagasFind = vagasFindLi[0].find('span', 'property-card__detail-value js-property-card-value')
             
             Vagas.append(findTextNull(vagasFind))
 
@@ -107,7 +111,7 @@ df['Endereco'] = Endereco
 # End scrapper
 df.to_csv('./aluguel.csv', index=False)
 
-client = storage.Client()
-bucket = client.bucket('viva-real-alguel')
-blob = bucket.blob('aluguel.csv')
-blob.upload_from_filename('aluguel.csv')
+# client = storage.Client()
+# bucket = client.bucket('viva-real-alguel')
+# blob = bucket.blob('aluguel.csv')
+# blob.upload_from_filename('aluguel.csv')
