@@ -9,7 +9,7 @@ from google.cloud import storage
 http  = urllib3.PoolManager()
 Valor = []
 TipoAluguel = []
-Condominio = []
+Iptu = []
 Area = []
 Quartos = []
 Banheiros = []
@@ -26,95 +26,107 @@ def findTextNull(elementFind):
     
     return elementText
 
-for cidade in ('florianopolis', 'brusque', 'blumenau'):
+for cidade in ('florianopolis','blumenau', 'brusque'):
 
-    for page in range(1,30):
+    for page in range(1,10):
 
-        url = 'https://www.vivareal.com.br/aluguel/santa-catarina/'+cidade+'/?__vt=gv:b&pagina='+str(page)+'tipos=apartamento_residencial,casa_residencial,condominio_residencial,,sobrado_residencial,kitnet_residencial'
+        url = 'https://www.zapimoveis.com.br/aluguel/casas/sc+'+cidade+'/?__zt=srl%3Aa&transacao=Aluguel&tipoUnidade=Residencial,Casa&tipo=Im%C3%B3vel%20usado&pagina='+str(page)
 
         page = http.urlopen('GET',url)
 
         soup = BeautifulSoup(page.data.decode('utf-8'),"html.parser")
 
-        alugueis = soup.find_all('article', {'class': 'property-card__container js-property-card'})
+        alugueis = soup.find_all('div', {'class': 'card-container'})
 
         for row in alugueis:
 
             Cidade.append(cidade)
 
-            enderecoFind = row.find('span', 'property-card__address')
+            enderecoFind = row.find('p', 'color-dark text-regular simple-card__address')
 
             Endereco.append(enderecoFind.text)
 
-            valor = row.find("div", "property-card__price js-property-card-prices js-property-card__price-small")
+            valor = row.find("p", "simple-card__price js-price heading-regular heading-regular__bolder align-left")
 
-            TipoAluguel.append(valor.find('span').text.replace('/',''))
+            TipoAluguel.append(valor.find('small').text.replace('/',''))
 
-            valor.find('span').decompose()
+            valor.find('small').decompose()
 
-            Valor.append(valor.text
+            Valor.append(valor.find("strong").text
                 .replace('.','')
                 .replace(' ','')
                 .replace('R$','')
                 )
 
-            condominioFind = row.find('strong', 'js-condo-price')
+            iptuFind = row.find('span', 'card-price__value')
 
-            if(condominioFind):
-                Condominio.append(condominioFind.text
+            if(iptuFind):
+                Iptu.append(iptuFind.text
                     .replace('R$','')
                     .replace('.','')
                     )
             else :
-                Condominio.append(0)
+                Iptu.append(0)
 
-            areaFind = row.find('span', 'property-card__detail-value js-property-card-value property-card__detail-area js-property-card-detail-area')
-
-            Area.append(areaFind.text)
-
-            quartosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-room js-property-detail-rooms')
+            areaFindLi = row.find_all('li', {'class': 'feature__item text-small js-areas'})
             
-            quartosText = ''
+            areaText = 0
 
-            for quartosFind in quartosFindLi:
-                quartosSpan = quartosFind.find('span', 'property-card__detail-value js-property-card-value')
-                quartosText = findTextNull(quartosSpan)
+            for li in areaFindLi:
+                areaSpanFind = li.find_all('span')[1]
+                areaText = areaSpanFind.text
+
+            Area.append(areaText
+                .replace('m²','')
+                .replace(' ', '')
+            )
+
+            quartosFindLi = row.find_all('li', 'feature__item text-small js-bedrooms')
+            
+            quartosText = 0
+
+            for li in quartosFindLi:
+                quartosSpanFind = li.find_all('span')[1]
+                quartosText = quartosSpanFind.text
+                quartosText = quartosText.replace(' ', '')
 
             Quartos.append(quartosText)
 
-            banheirosFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-bathroom js-property-detail-bathroom')
+            vagasFindLi = row.find_all('li', 'feature__item text-small js-parking-spaces')
             
-            banheirosText = ''
+            vagasText = 0
 
-            for banheirosFind in banheirosFindLi:
-                banheirosSapan = banheirosFind.find('span', 'property-card__detail-value js-property-card-value')
-                banheirosText = findTextNull(banheirosSapan)
+            for li in vagasFindLi:
+                vagasSpanFind = li.find_all('span')[1]
+                vagasText = vagasSpanFind.text
+                vagasText = vagasText.replace(' ', '')
+
+            Vagas.append(vagasText)
+
+            banheirosFindLi = row.find_all('li', 'feature__item text-small js-bathrooms')
+            
+            banheirosText = 0
+
+            for li in banheirosFindLi:
+                banheirosSpanFind = li.find_all('span')[1]
+                banheirosText = banheirosSpanFind.text
+                banheirosText = banheirosText.replace(' ', '')
 
             Banheiros.append(banheirosText)
 
-            vagasFindLi = row.find_all('li', 'property-card__detail-item property-card__detail-garage js-property-detail-garages')
-            
-            vagasText = ''
+            # uriFind = row.find('a', 'property-card__title js-cardLink js-card-title',  href=True)
 
-            for vagasFind in vagasFindLi:
-                vagasSpan = vagasFind.find('span', 'property-card__detail-value js-property-card-value')
-                vagasText = findTextNull(vagasSpan)
-            
-            Vagas.append(vagasText)
-
-            uriFind = row.find('a', 'property-card__title js-cardLink js-card-title',  href=True)
-
-            Uri.append("https://www.vivareal.com.br/"+uriFind['href'])
+            # Uri.append("https://www.vivareal.com.br/"+uriFind['href'])
 
 df=pd.DataFrame(Valor,columns=['Valor'])
 
 df['TipoAluguel'] = TipoAluguel
-df['Condominio'] = Condominio
+df['Iptu'] = Iptu
 df['Area'] = Area
 df['Quartos'] = Quartos
 df['Banheiros'] = Banheiros
 df['Vagas'] = Vagas
-df['Uri'] = Uri
+# df['Uri'] = Uri
 df['Cidade'] = Cidade
 df['Endereco'] = Endereco
 
