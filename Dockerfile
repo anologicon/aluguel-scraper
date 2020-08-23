@@ -5,9 +5,9 @@ VOLUME [ "/mydata" ]
 
 
 COPY scrapping.py ./
-COPY VivaRealAirflow-6b7a6249dd4a.json ./
+COPY aluguel-data-project-63b6ff0f324c.json ./
 
-ENV GOOGLE_APPLICATION_CREDENTIALS=./VivaRealAirflow-6b7a6249dd4a.json
+ENV GOOGLE_APPLICATION_CREDENTIALS=./aluguel-data-project-63b6ff0f324c.json
 
 RUN pip install pandas
 RUN pip install urllib3

@@ -28,7 +28,7 @@ def findTextNull(elementFind):
 
 for cidade in ('florianopolis','blumenau', 'brusque'):
 
-    for page in range(1,10):
+    for page in range(1,30):
 
         url = 'https://www.zapimoveis.com.br/aluguel/casas/sc+'+cidade+'/?__zt=srl%3Aa&transacao=Aluguel&tipoUnidade=Residencial,Casa&tipo=Im%C3%B3vel%20usado&pagina='+str(page)
 
@@ -131,9 +131,9 @@ df['Cidade'] = Cidade
 df['Endereco'] = Endereco
 
 # End scrapper
-df.to_csv('./aluguel.csv', index=False)
+df.to_csv('./alugueis.csv', index=False)
 
 # client = storage.Client()
-# bucket = client.bucket('viva-real-alguel')
-# blob = bucket.blob('aluguel.csv')
-# blob.upload_from_filename('aluguel.csv')
+# bucket = client.bucket('aluguel-data-scraper')
+# blob = bucket.blob('alugueis.csv')
+# blob.upload_from_filename('alugueis.csv')
