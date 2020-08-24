@@ -26,9 +26,12 @@ def findTextNull(elementFind):
     
     return elementText
 
-for cidade in ('florianopolis','blumenau', 'brusque'):
+cidades = ('florianopolis', 'brusque', 'blumenau','itajai','gaspar','bombinhas',
+    'balneario-camboriu', 'biguacu')
 
-    for page in range(1,30):
+for cidade in cidades:
+
+    for page in range(1,50):
 
         url = 'https://www.zapimoveis.com.br/aluguel/casas/sc+'+cidade+'/?__zt=srl%3Aa&transacao=Aluguel&tipoUnidade=Residencial,Casa&tipo=Im%C3%B3vel%20usado&pagina='+str(page)
 
