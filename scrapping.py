@@ -1,6 +1,10 @@
 import pandas as pd;
+from random import randint
 import urllib3;
 from bs4 import BeautifulSoup
+import json
+import time
+from slugify import slugify
 
 # Google storage
 from google.cloud import storage
@@ -17,6 +21,7 @@ Vagas = []
 Uri = []
 Cidade = []
 Endereco = []
+TipoNegociacao = []
 
 def findTextNull(elementFind):
     elementText = elementFind.text
@@ -26,99 +31,112 @@ def findTextNull(elementFind):
     
     return elementText
 
-cidades = ('florianopolis', 'brusque', 'blumenau','itajai','gaspar','bombinhas',
-    'balneario-camboriu', 'biguacu')
+f = open('configs.json',)
 
-for cidade in cidades:
+configs = json.load(f)
 
-    for page in range(1,50):
+max = len(configs['cidades']) * len(configs['tipoNegociacao']) * configs['qtdPaginas']
 
-        url = 'https://www.zapimoveis.com.br/aluguel/casas/sc+'+cidade+'/?__zt=srl%3Aa&transacao=Aluguel&tipoUnidade=Residencial,Casa&tipo=Im%C3%B3vel%20usado&pagina='+str(page)
+loading = 0
 
-        page = http.urlopen('GET',url)
+print('Iniciando scraping')
 
-        soup = BeautifulSoup(page.data.decode('utf-8'),"html.parser")
+for cidade in configs['cidades']:
+    print('Cidade - ', cidade)     
+    for tipoNegociacao in configs['tipoNegociacao']:
+        print('Tipo Negociacao ', tipoNegociacao)
+        for page in range(1,configs['qtdPaginas']):
+            sleepTime = randint(60,120)
+            print('Tempo de espera para a requisicao: '+str(sleepTime))
+            time.sleep(sleepTime)
+            url = 'https://www.zapimoveis.com.br/aluguel/'+slugify(tipoNegociacao)+'/sc+'+slugify(cidade)+'/?__zt=srl%3Aa&transacao=Aluguel&tipoUnidade=Residencial&tipo=Im%C3%B3vel%20usado&pagina='+str(page)
+            print('GET '+url)
+            page = http.urlopen('GET',url)
+            print('GET  fim')
+            soup = BeautifulSoup(page.data.decode('utf-8'),"html.parser")
 
-        alugueis = soup.find_all('div', {'class': 'card-container'})
+            alugueis = soup.find_all('div', {'class': 'card-container'})
+            
+            loading += 1               
 
-        for row in alugueis:
+            print(str(loading)+' -- requisicoes de -- '+str(max))
+            
+            for row in alugueis:
 
-            Cidade.append(cidade)
+                TipoNegociacao.append(tipoNegociacao)
 
-            enderecoFind = row.find('p', 'color-dark text-regular simple-card__address')
+                Cidade.append(cidade)
 
-            Endereco.append(enderecoFind.text)
+                enderecoFind = row.find('p', 'color-dark text-regular simple-card__address')
 
-            valor = row.find("p", "simple-card__price js-price heading-regular heading-regular__bolder align-left")
+                Endereco.append(enderecoFind.text)
 
-            TipoAluguel.append(valor.find('small').text.replace('/',''))
+                valor = row.find("p", "simple-card__price js-price heading-regular heading-regular__bolder align-left")
 
-            valor.find('small').decompose()
+                TipoAluguel.append(valor.find('small').text.replace('/',''))
 
-            Valor.append(valor.find("strong").text
-                .replace('.','')
-                .replace(' ','')
-                .replace('R$','')
-                )
+                valor.find('small').decompose()
 
-            iptuFind = row.find('span', 'card-price__value')
-
-            if(iptuFind):
-                Iptu.append(iptuFind.text
-                    .replace('R$','')
+                Valor.append(valor.find("strong").text
                     .replace('.','')
+                    .replace(' ','')
+                    .replace('R$','')
                     )
-            else :
-                Iptu.append(0)
 
-            areaFindLi = row.find_all('li', {'class': 'feature__item text-small js-areas'})
-            
-            areaText = 0
+                iptuFind = row.find('span', 'card-price__value')
 
-            for li in areaFindLi:
-                areaSpanFind = li.find_all('span')[1]
-                areaText = areaSpanFind.text
-                areaText = areaText.replace('m²','').replace(' ', '')
+                if(iptuFind):
+                    Iptu.append(iptuFind.text
+                        .replace('R$','')
+                        .replace('.','')
+                        )
+                else :
+                    Iptu.append(0)
 
-            Area.append(areaText)
+                areaFindLi = row.find_all('li', {'class': 'feature__item text-small js-areas'})
+                
+                areaText = 0
 
-            quartosFindLi = row.find_all('li', 'feature__item text-small js-bedrooms')
-            
-            quartosText = 0
+                for li in areaFindLi:
+                    areaSpanFind = li.find_all('span')[1]
+                    areaText = areaSpanFind.text
+                    areaText = areaText.replace('m²','').replace(' ', '')
 
-            for li in quartosFindLi:
-                quartosSpanFind = li.find_all('span')[1]
-                quartosText = quartosSpanFind.text
-                quartosText = quartosText.replace(' ', '')
+                Area.append(areaText)
 
-            Quartos.append(quartosText)
+                quartosFindLi = row.find_all('li', 'feature__item text-small js-bedrooms')
+                
+                quartosText = 0
 
-            vagasFindLi = row.find_all('li', 'feature__item text-small js-parking-spaces')
-            
-            vagasText = 0
+                for li in quartosFindLi:
+                    quartosSpanFind = li.find_all('span')[1]
+                    quartosText = quartosSpanFind.text
+                    quartosText = quartosText.replace(' ', '')
 
-            for li in vagasFindLi:
-                vagasSpanFind = li.find_all('span')[1]
-                vagasText = vagasSpanFind.text
-                vagasText = vagasText.replace(' ', '')
+                Quartos.append(quartosText)
 
-            Vagas.append(vagasText)
+                vagasFindLi = row.find_all('li', 'feature__item text-small js-parking-spaces')
+                
+                vagasText = 0
 
-            banheirosFindLi = row.find_all('li', 'feature__item text-small js-bathrooms')
-            
-            banheirosText = 0
+                for li in vagasFindLi:
+                    vagasSpanFind = li.find_all('span')[1]
+                    vagasText = vagasSpanFind.text
+                    vagasText = vagasText.replace(' ', '')
 
-            for li in banheirosFindLi:
-                banheirosSpanFind = li.find_all('span')[1]
-                banheirosText = banheirosSpanFind.text
-                banheirosText = banheirosText.replace(' ', '')
+                Vagas.append(vagasText)
 
-            Banheiros.append(banheirosText)
+                banheirosFindLi = row.find_all('li', 'feature__item text-small js-bathrooms')
+                
+                banheirosText = 0
 
-            # uriFind = row.find('a', 'property-card__title js-cardLink js-card-title',  href=True)
+                for li in banheirosFindLi:
+                    banheirosSpanFind = li.find_all('span')[1]
+                    banheirosText = banheirosSpanFind.text
+                    banheirosText = banheirosText.replace(' ', '')
 
-            # Uri.append("https://www.vivareal.com.br/"+uriFind['href'])
-
+                Banheiros.append(banheirosText)
+                
 df=pd.DataFrame(Valor,columns=['Valor'])
 
 df['TipoAluguel'] = TipoAluguel
@@ -127,7 +145,7 @@ df['Area'] = Area
 df['Quartos'] = Quartos
 df['Banheiros'] = Banheiros
 df['Vagas'] = Vagas
-# df['Uri'] = Uri
+df['TipoNegociacao'] = TipoNegociacao
 df['Cidade'] = Cidade
 df['Endereco'] = Endereco
 

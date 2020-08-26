@@ -1,0 +1,19 @@
+{
+    "cidades": [
+        "Florianópolis",
+        "Brusque",
+        "Blumenau",
+        "Itajaí",
+        "Gaspar",
+        "Bombinhas",
+        "Balneário Camboriú",
+        "Biguaçu"
+    ],
+    "tipoNegociacao":[
+        "Casas",
+        "Apartamentos",
+        "Quitinetes",
+        "Casas de condomínio"
+    ],
+    "qtdPaginas": 50
+}
