@@ -1,0 +1,3 @@
+sudo docker run -i -t -v ${PWD}:/mydata:rw etl_scrapper
+
+docker build -f ETL/Docker -t etl_scrapper .
