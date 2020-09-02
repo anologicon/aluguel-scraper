@@ -14,6 +14,7 @@ cidades =  list(cidades)
 cidades.append('Balneário')
 
 def cleanEndereco(cidade, endereco):
+
     enderecoWithouSc = endereco.replace('SC','')
     
     for cidadeList in cidades:
@@ -30,14 +31,19 @@ def cleanEndereco(cidade, endereco):
 
     return endereco
 
+def strip_list_noempty(mylist):
+    newlist = (item.strip() if hasattr(item, 'strip') else item for item in mylist)
+    return [item for item in newlist if item or not hasattr(item, 'strip')]
+
 def setBairro(endereco):
     for bairro in bairros:
         if endereco is not np.nan:
             if bairro in endereco:
-                bairro = bairro.replace(' ', '')
                 return bairro
             
     return np.nan
+
+bairros = strip_list_noempty(bairros)
 
 dataFrame['Endereco'] =  dataFrame.apply(lambda x: cleanEndereco(x.Cidade, x.Endereco), axis=1)
 dataFrame['Bairro'] =  dataFrame.apply(lambda x: setBairro(x.Endereco), axis=1)
